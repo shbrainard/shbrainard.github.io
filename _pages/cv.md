@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Biosketch"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,7 +9,5 @@ redirect_from:
 
 {% include base_path %}
 
-Biosketch
-
-[Download biographic sketch here](http://academicpages.github.io/files/CV_2021_12_12.pdf)
+[Download biographical sketch here](http://academicpages.github.io/files/CV_2021_12_12.pdf)
 
