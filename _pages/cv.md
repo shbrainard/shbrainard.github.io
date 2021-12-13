@@ -9,19 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* PhD in Plant Breeding and Genetics, University of Wisconsin-Madison, 2017-2021
-* MSc in Plant Sciences, Wageningen University, 2012-2014
-* BA in Philosophy and Biology, Swarthmore College, 2005-2009
+Biosketch
 
-Work experience
-======
-* 2021--presnet: Postdoctoral Research Associate
-  * University of Wisconsin-Madison
-  * Supervisor: Professor Julie Dawson
+[Download biographic sketch here](http://academicpages.github.io/files/CV_2021_12_12.pdf)
 
-* 2018--present: Research Fellow
-  * Savanna Institute
-  * Supervisor: Dr. Kevin Wolz
-  
