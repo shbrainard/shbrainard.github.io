@@ -10,4 +10,4 @@ location: "Madison, WI"
 
 A tutorial on how to use [bcftools](https://samtools.github.io/bcftools/) to filter VCF files prior to genetic mapping.
 
-This shell script was written to accompany lectures in the course "Genetic Mapping", taught at the University of Wisconsin-Madison in the spring of 2021. The tutorial is can be accessed [here](http://shbrainard.github.io/files/bcftools/filtering_demo.sh), and makes use of the example marker dataset located [here](http://shbrainard.github.io/files/bcftools/unfiltered.vcf.gz).  
+This shell script was written to accompany lectures in the course "Genetic Mapping", taught at the University of Wisconsin-Madison in the spring of 2021. The tutorial can be downloaded [here](http://shbrainard.github.io/files/bcftools/filtering_demo.sh), and makes use of an [example marker dataset](http://shbrainard.github.io/files/bcftools/unfiltered.vcf.gz).  
