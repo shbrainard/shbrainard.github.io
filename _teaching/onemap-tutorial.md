@@ -12,7 +12,7 @@ A tutorial on how to use [OneMap](https://github.com/augusto-garcia/onemap) and 
 
 These R Markdown files were written to accompany lectures in the course "Genetic Mapping", taught at the University of Wisconsin-Madison in the spring of 2021.
 
-- [Part 1](http://shbrainard.github.io/files/onemap/onemap-1.html) introduces the package, and demonstrates how to form linkage groups using an dataset from an F1 apple population.
+- [Part 1](http://shbrainard.github.io/files/onemap/onemap-1.html) introduces the package, and demonstrates how to form linkage groups using a dataset from an F1 apple population.
 
 - [Part 2](http://shbrainard.github.io/files/onemap/onemap-2.html) uses this same apple dataset to illustrate how recombination frequencies estimated between biallelic SNPs, and then ordered within linkage groups.
 
