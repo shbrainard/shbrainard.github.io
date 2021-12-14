@@ -3,7 +3,7 @@ title: "OneMap tutorial"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/onemap-tutorial
-venue: "Genetic Mapping"
+venue: "HORT615: Genetic Mapping"
 date: 2021-02-05
 location: "Madison, WI"
 ---
