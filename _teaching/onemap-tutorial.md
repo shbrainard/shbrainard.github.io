@@ -8,7 +8,9 @@ date: 2021-03-08
 location: "Madison, WI"
 ---
 
-A tutorial on how to use [OneMap](https://github.com/augusto-garcia/onemap) and the accompanying software [fullsibQTL](https://github.com/augusto-garcia/fullsibQTL).  These were written to accompany lectures in the course "Genetic Mapping", taught at the University of Wisconsin-Madison in the spring of 2021.
+A tutorial on how to use [OneMap](https://github.com/augusto-garcia/onemap) and the accompanying software [fullsibQTL](https://github.com/augusto-garcia/fullsibQTL).  
+
+These were written to accompany lectures in the course "Genetic Mapping", taught at the University of Wisconsin-Madison in the spring of 2021.
 
 - [Part 1](http://shbrainard.github.io/files/onemap/onemap-1.html) introduces the package, and demonstrates how to form linkage groups using an dataset from an F1 apple population.
 
