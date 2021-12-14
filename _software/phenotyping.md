@@ -1,10 +1,11 @@
 ---
 title: "High-throughput phenotyping"
 collection: software
-permalink: /software/ht-phenotyping
+permalink: /software/high-throughput-phenotyping
 ---
 
-This is an example software module
+As described in [this](https://shbrainard.github.io/publication/2021-06-16_FIPS), 
 
-carrot-phenotyping and hazelnut-phenotyping repos
-======
+[hazelnuts](https://github.com/shbrainard/hazelnut-phenotyping)
+
+[carrots](https://github.com/shbrainard/carrot-phenotyping).
