@@ -3,7 +3,7 @@ title: "bcftools tutorial"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/bcftools-tutorial
-venue: "Genetic Mapping"
+venue: "HORT615: Genetic Mapping"
 date: 2021-04-29
 location: "Madison, WI"
 ---
