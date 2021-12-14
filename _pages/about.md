@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-I am a plant breeder and geneticist, working to leverage high-throughput genotypic and phenotyping data to improve perennial crops for the Upper Midwest.
+I am a plant breeder and geneticist, combining high-throughput phenotyping methods and next-generation sequencing data to improve perennial woody crops in the Upper Midwest.
