@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a plant breeder and geneticist, combining high-throughput phenotyping methods and next-generation sequencing data to improve perennial woody crops in the Upper Midwest.
+I am a plant breeder, focussed on the genetic improvement of perennial woody crops for the Upper Midwest.
 
 I am a postdoctoral researcher in the [Dawson Lab](https://dawson.horticulture.wisc.edu/) at the University of Wisconsin-Madison, where I am developing genomic prediction models to improve the efficiency of selection in American hazelnut (<i>Corylus americana</i>), a native shrub. 
 
