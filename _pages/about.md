@@ -10,6 +10,6 @@ redirect_from:
 
 I am a plant breeder, focussed on the genetic improvement of perennial woody crops for the Upper Midwest.
 
-I am a postdoctoral researcher in the [Dawson Lab](https://dawson.horticulture.wisc.edu/) at the University of Wisconsin-Madison, where I am developing genomic prediction models to improve the efficiency of selection in American hazelnut (<i>Corylus americana</i>), a native shrub. 
+I work as postdoctoral researcher in the [Dawson Lab](https://dawson.horticulture.wisc.edu/) at the University of Wisconsin-Madison, where I am developing genomic prediction models to improve the efficiency of selecting for multiple traits in diverse populations of American hazelnut (<i>Corylus americana</i>), a native shrub. 
 
-I also work at the non-profit organization [Savanna Institute](https://www.savannainstitute.org/), where I am helping to assemble large germplasm respositories for a number of perennial species that could be cultivated within agroforestry farming systems.
+I also work with the non-profit organization [Savanna Institute](https://www.savannainstitute.org/), where I am helping with the assembly of large germplasm respositories for a number of perennial species that could be grown within agroforestry farming systems.
