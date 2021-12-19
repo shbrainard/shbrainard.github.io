@@ -4,7 +4,7 @@ collection: software
 permalink: /software/next-gen-sequencing
 ---
 
-Software for working with Illumina data and high-density molecular marker datasets
+Java applications for working with Illumina data and high-density molecular marker datasets
 
 - [gbsTools](https://github.com/shbrainard/gbsTools) is a program written in Java for demultiplexing paired-end Illumina data in a manner that retains sample-specific barcodes using fuzzy-matching.
 
