@@ -88,7 +88,7 @@ author:
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=V9Dc4MkAAAAJ"
   email            : "shbrainard@wisc.edu"
-  researchgate     : "https://www.researchgate.net/profile/Scott-Brainard/"
+  researchgate     : #"https://www.researchgate.net/profile/Scott-Brainard/"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "shbrainard"
+  github           : #"shbrainard"
   google_plus      :
   keybase          :
   instagram        :
