@@ -1,5 +1,5 @@
 ---
-title: "Next-generation sequence data tools"
+title: "Next-generation sequencing software"
 collection: software
 permalink: /software/next-gen-sequencing
 ---
