@@ -9,5 +9,5 @@ redirect_from:
 
 {% include base_path %}
 
-[Download biographical sketch here](http://shbrainard.github.io/files/biosketch_2022_09_08.pdf)
+[Download biographical sketch here](http://shbrainard.github.io/files/biosketch_2022_09_09.pdf)
 
