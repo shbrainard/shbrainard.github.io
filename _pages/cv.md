@@ -11,4 +11,3 @@ redirect_from:
 
 [Download biographical sketch here](http://shbrainard.github.io/files/biosketch_2023_01_19.pdf)
 
-
