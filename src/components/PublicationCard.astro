@@ -16,7 +16,7 @@ const year = new Date(date).getUTCFullYear();
 
 <article class="border-b border-slate-100 py-5 last:border-0">
   <h3 class="text-base font-semibold text-slate-900">
-    {link ? <a href={link} class="hover:text-blue-600 transition-colors" target="_blank" rel="noopener">{title}</a> : title}
+    {link ? <a href={link} class="hover:text-blue-600 transition-colors" target="_blank" rel="noopener" set:html={title} /> : <Fragment set:html={title} />}
   </h3>
   <p class="mt-1 text-sm text-slate-500">
     <span class="italic">{venue}</span> ({year})
