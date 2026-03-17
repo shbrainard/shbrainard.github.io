@@ -18,7 +18,7 @@ const rendered = await Promise.all(
     {rendered.map(({ entry, Content }) => (
       <article class="border-b border-slate-100 py-5 last:border-0">
         <h3 class="text-base font-semibold text-slate-900">{entry.data.title}</h3>
-        <div class="mt-2 text-sm text-slate-700 prose prose-sm prose-slate prose-a:text-blue-600 max-w-none">
+        <div class="mt-2 text-sm text-slate-700 prose prose-sm prose-slate prose-a:text-blue-600 prose-a:underline max-w-none">
           <Content />
         </div>
       </article>

@@ -24,7 +24,7 @@ const rendered = await Promise.all(
         {entry.data.venue && (
           <p class="mt-1 text-sm text-slate-500">{entry.data.venue} ({entry.data.date.getFullYear()})</p>
         )}
-        <div class="mt-2 text-sm text-slate-700 prose prose-sm prose-slate prose-a:text-blue-600 max-w-none">
+        <div class="mt-2 text-sm text-slate-700 prose prose-sm prose-slate prose-a:text-blue-600 prose-a:underline max-w-none">
           <Content />
         </div>
       </article>
