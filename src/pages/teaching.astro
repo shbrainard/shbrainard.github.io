@@ -1,0 +1,33 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TeachingCard from '../components/TeachingCard.astro';
+
+const entries = (await getCollection('teaching')).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+
+const rendered = await Promise.all(
+  entries.map(async (entry) => {
+    const { Content } = await render(entry);
+    return { entry, Content };
+  })
+);
+---
+
+<BaseLayout title="Teaching">
+  <h1 class="text-2xl font-bold text-slate-900">Teaching</h1>
+  <div class="mt-4">
+    {rendered.map(({ entry, Content }) => (
+      <article class="border-b border-slate-100 py-5 last:border-0">
+        <h3 class="text-base font-semibold text-slate-900">{entry.data.title}</h3>
+        {entry.data.venue && (
+          <p class="mt-1 text-sm text-slate-500">{entry.data.venue} ({entry.data.date.getFullYear()})</p>
+        )}
+        <div class="mt-2 text-sm text-slate-700 prose prose-sm prose-slate prose-a:text-blue-600 max-w-none">
+          <Content />
+        </div>
+      </article>
+    ))}
+  </div>
+</BaseLayout>
