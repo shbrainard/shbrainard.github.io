@@ -1,0 +1,27 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const entries = await getCollection('software');
+
+const rendered = await Promise.all(
+  entries.map(async (entry) => {
+    const { Content } = await render(entry);
+    return { entry, Content };
+  })
+);
+---
+
+<BaseLayout title="Software">
+  <h1 class="text-2xl font-bold text-slate-900">Software</h1>
+  <div class="mt-4">
+    {rendered.map(({ entry, Content }) => (
+      <article class="border-b border-slate-100 py-5 last:border-0">
+        <h3 class="text-base font-semibold text-slate-900">{entry.data.title}</h3>
+        <div class="mt-2 text-sm text-slate-700 prose prose-sm prose-slate prose-a:text-blue-600 max-w-none">
+          <Content />
+        </div>
+      </article>
+    ))}
+  </div>
+</BaseLayout>

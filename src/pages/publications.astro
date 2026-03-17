@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+
+const publications = (await getCollection('publications')).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<BaseLayout title="Publications">
+  <h1 class="text-2xl font-bold text-slate-900">Publications</h1>
+  <div class="mt-4">
+    {publications.map((pub) => (
+      <PublicationCard
+        title={pub.data.title}
+        date={pub.data.date}
+        venue={pub.data.venue}
+        link={pub.data.link}
+        paperurl={pub.data.paperurl}
+        code={pub.data.code}
+        github={pub.data.github}
+        citation={pub.data.citation}
+      />
+    ))}
+  </div>
+</BaseLayout>

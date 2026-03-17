@@ -1,0 +1,65 @@
+---
+const currentPath = Astro.url.pathname;
+const links = [
+  { href: '/', label: 'About' },
+  { href: '/publications/', label: 'Publications' },
+  { href: '/teaching/', label: 'Teaching' },
+  { href: '/software/', label: 'Software' },
+  { href: '/cv/', label: 'CV' },
+];
+---
+
+<nav class="border-b border-slate-200 bg-white">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6">
+    <div class="flex h-14 items-center justify-between">
+      <a href="/" class="text-lg font-semibold text-slate-900">Scott Brainard</a>
+      <button
+        id="menu-toggle"
+        class="sm:hidden p-2 text-slate-600 hover:text-slate-900"
+        aria-label="Toggle menu"
+      >
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div class="hidden sm:flex sm:gap-6">
+        {links.map(({ href, label }) => (
+          <a
+            href={href}
+            class:list={[
+              'text-sm font-medium transition-colors',
+              currentPath === href
+                ? 'text-blue-600'
+                : 'text-slate-600 hover:text-slate-900',
+            ]}
+          >
+            {label}
+          </a>
+        ))}
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden pb-3 sm:hidden">
+      {links.map(({ href, label }) => (
+        <a
+          href={href}
+          class:list={[
+            'block py-2 text-sm font-medium',
+            currentPath === href
+              ? 'text-blue-600'
+              : 'text-slate-600 hover:text-slate-900',
+          ]}
+        >
+          {label}
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  toggle?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

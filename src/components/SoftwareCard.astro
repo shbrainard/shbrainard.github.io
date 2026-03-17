@@ -1,0 +1,13 @@
+---
+interface Props {
+  title: string;
+  body: string;
+}
+
+const { title, body } = Astro.props;
+---
+
+<article class="border-b border-slate-100 py-5 last:border-0">
+  <h3 class="text-base font-semibold text-slate-900">{title}</h3>
+  <div class="mt-2 text-sm text-slate-700 prose prose-sm prose-slate prose-a:text-blue-600 max-w-none" set:html={body} />
+</article>

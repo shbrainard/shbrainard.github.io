@@ -1,0 +1,36 @@
+---
+interface Props {
+  title: string;
+  date: Date;
+  venue: string;
+  link?: string;
+  paperurl?: string;
+  code?: string;
+  github?: string;
+  citation: string;
+}
+
+const { title, date, venue, link, paperurl, code, github, citation } = Astro.props;
+const year = date.getFullYear();
+---
+
+<article class="border-b border-slate-100 py-5 last:border-0">
+  <h3 class="text-base font-semibold text-slate-900">
+    {link ? <a href={link} class="hover:text-blue-600 transition-colors" target="_blank" rel="noopener">{title}</a> : title}
+  </h3>
+  <p class="mt-1 text-sm text-slate-500">
+    <span class="italic">{venue}</span> ({year})
+  </p>
+  <p class="mt-2 text-sm text-slate-700" set:html={citation} />
+  <div class="mt-2 flex flex-wrap gap-3">
+    {paperurl && (
+      <a href={paperurl} class="text-xs font-medium text-blue-600 hover:text-blue-800">PDF</a>
+    )}
+    {code && (
+      <a href={code} class="text-xs font-medium text-blue-600 hover:text-blue-800" target="_blank" rel="noopener">Data</a>
+    )}
+    {github && (
+      <a href={github} class="text-xs font-medium text-blue-600 hover:text-blue-800" target="_blank" rel="noopener">Code</a>
+    )}
+  </div>
+</article>
