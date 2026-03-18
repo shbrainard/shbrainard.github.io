@@ -10,11 +10,13 @@
   },
   "10.17660/actahortic.2023.1379.20": {
     "paperurl": "/files/publications/2023AH.pdf",
-    "code": "https://doi.org/10.6084/m9.figshare.21902193"
+    "code": "https://doi.org/10.6084/m9.figshare.21902193",
+    "formattedTitle": "Improving selection efficiency in <i>C. americana</i> × <i>C. avellana</i> interspecific hybrids through the development of an indel-based genetic map"
   },
   "10.1002/csc2.20865": {
     "paperurl": "/files/publications/2023CS.pdf",
-    "code": "https://zenodo.org/record/5911852"
+    "code": "https://zenodo.org/record/5911852",
+    "formattedTitle": "Novel QTL associated with <i>Rhizoctonia solani</i> Kühn resistance identified in two table beet × sugar beet F<sub>2:3</sub> populations using a new table beet reference genome"
   },
   "10.3389/fpls.2023.1257707": {
     "paperurl": "/files/publications/2023FIPS.pdf"
@@ -22,10 +24,12 @@
   "10.1111/pbi.14199": {
     "paperurl": "/files/publications/2024PBJ.pdf",
     "code": "https://zenodo.org/deposit/7439335",
-    "github": "https://github.com/shbrainard/Camericana_pipelines"
+    "github": "https://github.com/shbrainard/Camericana_pipelines",
+    "formattedTitle": "The first two chromosome‐scale genome assemblies of American hazelnut enable comparative genomic analysis of the genus <i>Corylus</i>"
   },
   "10.17660/actahortic.2024.1393.24": {
-    "paperurl": "/files/publications/2024AH.pdf"
+    "paperurl": "/files/publications/2024AH.pdf",
+    "formattedTitle": "QTL mapping utilizing F<sub>2:3</sub> linkage mapping populations reveals regions of chromosomes 2 and 6 are significantly associated with root width in carrot"
   },
   "10.1093/g3journal/jkae041": {
     "paperurl": "/files/publications/2024G3.pdf",
