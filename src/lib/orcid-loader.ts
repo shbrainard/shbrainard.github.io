@@ -29,7 +29,7 @@ interface OrcidWorkDetail {
   contributors: { contributor: OrcidContributor[] } | null;
 }
 
-const extrasMap = extras as Record<string, { paperurl?: string; code?: string; github?: string }>;
+const extrasMap = extras as Record<string, { paperurl?: string; code?: string; github?: string; formattedTitle?: string }>;
 
 async function fetchJson(url: string) {
   const res = await fetch(url, { headers: { Accept: 'application/json' } });
@@ -86,16 +86,17 @@ export function orcidLoader(): Loader {
 
         const contributors = detail.contributors?.contributor ?? [];
         const authorStr = formatAuthors(contributors, 'Brainard');
-        const title = summary.title.title.value;
+
+        // Look up extras by normalized DOI
+        const extra = doiNormalized ? extrasMap[doiNormalized] : undefined;
+
+        const title = extra?.formattedTitle ?? summary.title.title.value;
         const venue = summary['journal-title']?.value ?? '';
         const dateStr = parseDate(summary['publication-date']);
         const year = summary['publication-date']?.year?.value ?? '';
 
         const citation = `${authorStr}. ${title}. <em>${venue}</em> (${year})`;
         const link = doi ? `https://doi.org/${doi}` : undefined;
-
-        // Look up extras by normalized DOI
-        const extra = doiNormalized ? extrasMap[doiNormalized] : undefined;
 
         store.set({
           id: doi ?? `orcid-${putCode}`,
