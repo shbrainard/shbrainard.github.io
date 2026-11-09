@@ -13,3 +13,6 @@ node_modules/
 
 # macOS
 .DS_Store
+
+# Per-machine settings, which can record command lines with tokens
+**/.claude/settings.local.json
